@@ -20,34 +20,34 @@ churn: A binary indicator where:
 0 indicates active customers.
 
 ## Project Workflow
-Step 1: Data Loading and Exploration
+- Step 1: Data Loading and Exploration
 Load the dataset and inspect the structure.
 Handle missing or inconsistent data.
 Analyze the distribution of key features and relationships between variables.
-Step 2: Feature Engineering
+- Step 2: Feature Engineering
 Derived Features:
 Customer Tenure: Difference between the first and last booking times.
 Recency: Days since the last booking compared to the dataset's reference date.
 Categorical Encoding:
 Encode Primary_sales_product_type using LabelEncoder.
-Step 3: Data Preprocessing
+- Step 3: Data Preprocessing
 Handle missing values.
 Normalize numerical features using StandardScaler.
 Split the data into training and testing sets (e.g., 70% training, 30% testing).
-Step 4: Model Training
+- Step 4: Model Training
 Selected Model: Random Forest Classifier.
 Train the model on the training set using features such as booking frequency, invoice amounts, tenure, and recency.
-Step 5: Model Evaluation
+- Step 5: Model Evaluation
 Evaluate model performance using:
 Accuracy
 Precision, Recall, F1-Score
 Confusion Matrix
 Visualize the results to identify areas for improvement.
-Step 6: Feature Importance Analysis
+- Step 6: Feature Importance Analysis
 Identify the most important features driving churn predictions, e.g., recency or average invoice amount.
-Step 7: Recommendations
+- Step 7: Recommendations
 Develop actionable strategies to reduce churn based on insights from the model.
-Step 8: Deployment
+- Step 8: Deployment
 Save the model for deployment using joblib.
 Provide a user-friendly interface for predicting churn on new customer data.
 
